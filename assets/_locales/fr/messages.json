@@ -1,0 +1,10 @@
+{
+  "preventTranslateCode": {
+    "message": "Empêcher la traduction du code",
+    "description": "Empêcher la traduction du code"
+  },
+  "forceModifyFont": {
+    "message": "Forcer la modification de la police",
+    "description": "Forcer la modification de la police"
+  }
+}

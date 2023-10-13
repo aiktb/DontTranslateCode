@@ -1,0 +1,10 @@
+{
+  "preventTranslateCode": {
+    "message": "翻訳コードの防止",
+    "description": "翻訳コードの防止"
+  },
+  "forceModifyFont": {
+    "message": "フォントの強制変更",
+    "description": "フォントの強制変更"
+  }
+}

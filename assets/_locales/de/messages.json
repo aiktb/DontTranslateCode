@@ -1,0 +1,10 @@
+{
+  "preventTranslateCode": {
+    "message": "Prevenir a tradução de código",
+    "description": "Prevenir a tradução de código"
+  },
+  "forceModifyFont": {
+    "message": "Forçar a modificação da fonte",
+    "description": "Forçar a modificação da fonte"
+  }
+}

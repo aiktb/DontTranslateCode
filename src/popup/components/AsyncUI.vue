@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
+import Browser from 'webextension-polyfill';
 
 import Logo from 'data-text:@Assets/logo.svg';
 
@@ -37,8 +38,12 @@ watch(forceModifyFont, async (newValue) => {
     <main class="flex items-center justify-center py-2">
       <menu class="flex flex-col items-center gap-y-3">
         <h1 class="mb-2 text-lg font-bold text-sky-400">Don't Translate Code!</h1>
-        <MenuItem v-model="preventTranslation"> Prevent translate code</MenuItem>
-        <MenuItem v-model="forceModifyFont"> Force modify font </MenuItem>
+        <MenuItem v-model="preventTranslation">
+          {{ Browser.i18n.getMessage(Option.preventTranslateCode) }}
+        </MenuItem>
+        <MenuItem v-model="forceModifyFont">
+          {{ Browser.i18n.getMessage(Option.forceModifyFont) }}
+        </MenuItem>
       </menu>
     </main>
   </div>

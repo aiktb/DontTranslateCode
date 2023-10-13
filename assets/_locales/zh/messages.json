@@ -1,0 +1,10 @@
+{
+  "preventTranslateCode": {
+    "message": "阻止翻译代码",
+    "description": "阻止翻译代码"
+  },
+  "forceModifyFont": {
+    "message": "强制修改字体",
+    "description": "强制修改字体"
+  }
+}

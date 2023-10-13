@@ -55,6 +55,7 @@
     "web-ext": "^7.8.0"
   },
   "manifest": {
+    "default_locale": "en",
     "web_accessible_resources": [
       {
         "resources": [

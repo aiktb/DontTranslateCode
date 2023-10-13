@@ -1,0 +1,10 @@
+{
+  "preventTranslateCode": {
+    "message": "Prevent translate code",
+    "description": "Prevent translate code"
+  },
+  "forceModifyFont": {
+    "message": "Force modify font",
+    "description": "Force modify font"
+  }
+}
