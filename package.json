@@ -1,0 +1,57 @@
+{
+  "name": "dont-translate-code",
+  "displayName": "Don't translate code!",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Prevents pre elements on the page from being incorrectly translated.",
+  "license": "MIT",
+  "author": "aiktb <hey@aiktb.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiktb/DontTranslateCode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aiktb/DontTranslateCode/issues"
+  },
+  "scripts": {
+    "dev": "plasmo dev",
+    "dev:firefox": "plasmo dev --target=firefox-mv2",
+    "debug": "plasmo dev --verbose",
+    "debug:firefox": "plasmo dev --target=firefox-mv2 --verbose",
+    "build": "plasmo build",
+    "build:firefox": "plasmo build --target=firefox-mv2",
+    "start": "web-ext run --source-dir ./build/chrome-mv3-dev -t chromium --start-url chrome://newtab",
+    "start:firefox": "web-ext run --source-dir ./build/firefox-mv2-dev",
+    "package": "plasmo package",
+    "package:firefox": "plasmo package --target=firefox-mv2",
+    "prepare": "husky install",
+    "format": "prettier --check --write .",
+    "lint": "eslint --ext .ts,.vue src/**/*"
+  },
+  "dependencies": {
+    "plasmo": "^0.83.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4",
+    "webextension-polyfill": "^0.10.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@iconify/vue": "^4.1.1",
+    "@types/chrome": "^0.0.243",
+    "@types/webextension-polyfill": "^0.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "postcss": "^8.4.31",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "prettier": "^3.0.3",
+    "web-ext": "^7.8.0"
+  }
+}
