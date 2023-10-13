@@ -3,6 +3,10 @@
   "exclude": ["node_modules"],
   "include": [".plasmo/index.d.ts", "./**/*.ts", "./**/*.vue"],
   "compilerOptions": {
+    "paths": {
+      "~*": ["./src/*"],
+      "@Assets/*": ["./assets/*"]
+    },
     "baseUrl": ".",
     /* Linting */
     "strict": true,
