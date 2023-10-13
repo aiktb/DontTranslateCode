@@ -1,7 +1,7 @@
 import type { PlasmoCSConfig } from 'plasmo';
 
 export const config: PlasmoCSConfig = {
-  matches: ['https://*/*'],
+  matches: ['<all_urls>'],
   all_frames: true,
 };
 
