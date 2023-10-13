@@ -6,6 +6,6 @@ export const config: PlasmoCSConfig = {
 };
 
 export enum Option {
-  preventTranslation = 'preventTranslation',
+  preventTranslateCode = 'preventTranslateCode',
   forceModifyFont = 'forceModifyFont',
 }

@@ -10,11 +10,11 @@ import { Option } from '~contents/constants';
 import MenuItem from './MenuItem.vue';
 
 const storage = new Storage({ area: 'local' });
-const preventTranslation = ref<boolean>(await storage.get(Option.preventTranslation));
+const preventTranslation = ref<boolean>(await storage.get(Option.preventTranslateCode));
 const forceModifyFont = ref<boolean>(await storage.get(Option.forceModifyFont));
 
 watch(preventTranslation, async (newValue) => {
-  await storage.set(Option.preventTranslation, newValue);
+  await storage.set(Option.preventTranslateCode, newValue);
 });
 
 watch(forceModifyFont, async (newValue) => {
@@ -37,7 +37,7 @@ watch(forceModifyFont, async (newValue) => {
     <main class="flex items-center justify-center py-2">
       <menu class="flex flex-col items-center gap-y-3">
         <h1 class="mb-2 text-lg font-bold text-sky-400">Don't Translate Code!</h1>
-        <MenuItem v-model="preventTranslation"> Prevent translate </MenuItem>
+        <MenuItem v-model="preventTranslation"> Prevent translate code</MenuItem>
         <MenuItem v-model="forceModifyFont"> Force modify font </MenuItem>
       </menu>
     </main>
