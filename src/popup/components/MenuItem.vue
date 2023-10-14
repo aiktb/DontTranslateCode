@@ -7,7 +7,7 @@ const emit = defineEmits<{
 
 <template>
   <li
-    class="group w-full transition-all hover:bg-blue-200 hover:font-bold hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-sky-400"
+    class="group w-full transition-all hover:bg-blue-200 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-sky-400"
   >
     <button
       role="checkbox"
