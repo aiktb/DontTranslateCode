@@ -73,12 +73,14 @@ pnpm start:firefox
 
 #### Chrome/Edge: `build/chrome-mv3-prod.zip`
 
-```shell
+```bash
+pnpm build
 pnpm package
 ```
 
 #### Firefox: `build/firefox-mv2-prod.zip`
 
-```shell
+```bash
+pnpm build:firefox
 pnpm package:firefox
 ```
