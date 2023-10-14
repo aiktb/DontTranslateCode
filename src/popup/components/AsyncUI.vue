@@ -31,6 +31,7 @@ watch(forceModifyFont, async (newValue) => {
       <a
         href="https://github.com/aiktb/DontTranslateCode"
         target="_blank"
+        title="GitHub Repository Address"
         class="flex justify-center text-9xl"
         v-html="Logo"
       />
