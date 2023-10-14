@@ -4,11 +4,11 @@
 
 # Don't Translate Code
 
-Prevent the translator from translating code block that should not be translated!
+Web Translator will no longer translate blocks of code on the page, and it will no longer make the font of the code look weird.
 
 Special thanks to **_[plasmo](https://github.com/PlasmoHQ/plasmo)_** for taking the frustration out of browser extension development for me.
 
-![](https://s2.loli.net/2023/10/13/pRIxXeczQrEjOSu.webp)
+![](https://s2.loli.net/2023/10/14/R2VUykeXCA8iTFG.webp)
 
 ## Features
 
