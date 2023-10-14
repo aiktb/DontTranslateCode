@@ -16,6 +16,6 @@ Browser.runtime.onInstalled.addListener(async () => {
     await storage.set(Option.preventTranslateCode, true);
   }
   if (!oldOptions.forceConvertFont) {
-    await storage.set(Option.forceModifyFont, false);
+    await storage.set(Option.forceModifyFont, true);
   }
 });
