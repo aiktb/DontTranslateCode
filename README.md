@@ -4,7 +4,7 @@
 
 # Don't Translate Code
 
-Prevent the translator from translating code segments that should not be translated!
+Prevent the translator from translating code block that should not be translated!
 
 Special thanks to **_[plasmo](https://github.com/PlasmoHQ/plasmo)_** for taking the frustration out of browser extension development for me.
 

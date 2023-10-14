@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "private": true,
-  "description": "Prevents pre elements on the page from being incorrectly translated.",
+  "description": "Prevents code block on the page from being incorrectly translated.",
   "license": "MIT",
   "author": "aiktb <hey@aiktb.com>",
   "repository": {
