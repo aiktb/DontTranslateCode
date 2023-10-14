@@ -6,9 +6,11 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <li class="group w-full transition-all hover:bg-slate-800 hover:font-bold hover:text-sky-400">
+  <li
+    class="group w-full transition-all hover:bg-blue-200 hover:font-bold hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-sky-400"
+  >
     <button
-      class="flex w-full cursor-pointer items-center justify-between gap-x-2 rounded-md px-2 outline outline-2 outline-sky-400 focus-visible:outline-slate-50"
+      class="flex w-full cursor-pointer items-center justify-between gap-x-2 rounded-md px-2 outline outline-2 outline-sky-400 focus-visible:outline-slate-950 dark:focus-visible:outline-slate-50"
       @click="emit('update:modelValue', !props.modelValue)"
     >
       <slot name="default" />

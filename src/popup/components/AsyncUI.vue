@@ -25,7 +25,7 @@ watch(forceModifyFont, async (newValue) => {
 
 <template>
   <div
-    class="flex gap-x-3 whitespace-nowrap bg-slate-900 px-4 py-2 font-mono text-base text-blue-200"
+    class="flex gap-x-3 whitespace-nowrap bg-slate-200 px-4 py-2 font-mono text-base text-slate-800 dark:bg-slate-900 dark:text-blue-200"
   >
     <header>
       <a
