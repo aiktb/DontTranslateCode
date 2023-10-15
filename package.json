@@ -1,7 +1,7 @@
 {
   "name": "dont-translate-code",
   "displayName": "Don't translate code!",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "private": true,
   "description": "Prevents code block on the page from being incorrectly translated.",
@@ -64,7 +64,10 @@
     "web_accessible_resources": [
       {
         "resources": [
-          "assets/IntelOneMono-Regular.woff2"
+          "assets/fonts/IntelOneMono-Regular.woff2",
+          "assets/fonts/IntelOneMono-Italic.woff2",
+          "assets/fonts/IntelOneMono-Bold.woff2",
+          "assets/fonts/IntelOneMono-BoldItalic.woff2"
         ],
         "matches": [
           "<all_urls>"

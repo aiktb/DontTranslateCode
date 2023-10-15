@@ -19,17 +19,29 @@ export const config: PlasmoCSConfig = {
   }
 
   const FONT_NAME = 'Intel One Mono';
-  const FONT_FILE = 'assets/IntelOneMono-Regular.woff2';
-  const FONT_URL = Browser.runtime.getURL(FONT_FILE);
+  const fontTemplate = (font: string) => `assets/fonts/IntelOneMono-${font}.woff2`;
+  const REGULAR_FONT = fontTemplate('Regular');
+  const BOLD_FONT = fontTemplate('Bold');
+  const ITALIC_FONT = fontTemplate('Italic');
+  const BOLD_ITALIC_FONT = fontTemplate('BoldItalic');
+
+  const createFontFace = (font: string) => {
+    const FONT_SRC = Browser.runtime.getURL(font);
+    return `
+      @font-face {
+        font-display: swap;
+        font-family: '${FONT_NAME}';
+        src: url('${FONT_SRC}') format('woff2');
+        font-weight: ${font.includes('Bold') ? 'bold' : 'normal'};
+        font-style: ${font.includes('Italic') ? 'italic' : 'normal'};
+      }`;
+  };
 
   const css = `
-    @font-face {
-      font-display: swap;
-      font-family: '${FONT_NAME}';
-      font-weight: normal;
-      font-style: normal;
-      src: url(${FONT_URL}) format('woff2');
-    }
+    ${createFontFace(REGULAR_FONT)}
+    ${createFontFace(BOLD_FONT)}
+    ${createFontFace(ITALIC_FONT)}
+    ${createFontFace(BOLD_ITALIC_FONT)}
 
     pre, code {
       font-family: '${FONT_NAME}', monospace !important;
@@ -37,6 +49,8 @@ export const config: PlasmoCSConfig = {
 
   const style = document.createElement('style');
   style.setAttribute('type', 'text/css');
+  style.setAttribute('id', "don't-translate-code");
   style.textContent = css;
+
   document.head.appendChild(style);
 })();
