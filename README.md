@@ -13,10 +13,9 @@
   </a>
 </p>
 
-
 # Don't Translate Code
 
-Web Translator will no longer translate blocks of code on the page, and it will no longer make the font of the code look weird.
+Web Translator will no longer translate code blocks on the pages, and it will no longer make the font of the code look weird.
 
 Special thanks to **_[plasmo](https://github.com/PlasmoHQ/plasmo)_** for taking the frustration out of browser extension development for me.
 
